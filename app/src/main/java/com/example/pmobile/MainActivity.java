@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = mAuth.getCurrentUser();
                 if (user != null ) {
                     Toast.makeText(MainActivity.this, "Login berhasil", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(MainActivity.this, MainNavActivity.class);
                     startActivity(intent);
                     finish();
                 }
